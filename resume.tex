@@ -1,0 +1,141 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheadTwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubhead}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\normalsize#3}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\link}[2]{{\color{blue}\href{#1}{#2}}}
+
+% \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%              CV STARTS HERE              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\huge Duy Nguyen} \\
+  & Email: \href{mailto:duynguyen.ori75@gmail.com}{duynguyen.ori75@gmail.com}\\
+  & Mobile: +84 985 310995 \\
+  & Linkedin: \href{https://www.linkedin.com/in/duynguyen269/}{Duy Nguyen}
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubhead
+      {Worldquant LLC}{Aug 2018 – Present}
+      {Software Engineer}
+      \resumeItemListStart
+        \resumeItem{Building internal data infrastructure}
+        \resumeItem{Implement new transformation tool which convert raw data to internal format which is much faster(about 2x-3x times) than old tool based on Spark. It will be deployed soon, and will reduce lots of manual work of my team}
+        \resumeItem{Language/Technology: \textbf{Facebook Thrift}, \textbf{Python}, \textbf{C++}, \textbf{Scala}, \textbf{Spark}}
+      \resumeItemListEnd
+
+    \resumeSubhead
+      {Worldquant LLC}{Aug 2017 – Jul 2018}
+      {Web Developer}
+      \resumeItemListStart
+        \resumeItem{Maintained and improved internal applications, which help Researchers and Portfolio Managers manage their tasks, strategies and alphas easily}
+        \resumeItem{One of the internal webs is able to serve few hundred API heavy-computing requests per second}
+        \resumeItem{Wrote an ORM-like layer which converts JSON parameters to SQL query}
+        \resumeItem{Implemented an in-house survey system based on LimeSurvey}	
+        \resumeItem{Language/Technology: \textbf{Apache HTTP Server}, \textbf{Perl}, \textbf{MySQL}, \textbf{MySQL}, \textbf{ReactJS}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------AWARDS----------
+\section{Achievements \& Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheadTwo
+      {Ranked 9th in Vietnam National Olympiad in Informatics}{2013}
+      \resumeItemListStart
+        \resumeItem{Competed individually to solve 6 algorithmic problems using Pascal}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubhead
+      {University of Engineering and Technology, VNU Hanoi}{Aug. 2013 -- May. 2017}
+      {Bachelor of Computer Science;  GPA: 3.36/4.0}
+
+    \resumeSubheadTwo
+      {Self-learning courses}{}
+      \resumeItemListStart
+        \resumeItem{CMU - Database systems -- https://15445.courses.cs.cmu.edu/}
+        \resumeItem{Princeton University - Distributed System -- https://www.cs.princeton.edu/courses/archive/fall16/cos418}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
